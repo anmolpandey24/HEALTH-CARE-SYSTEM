@@ -1,0 +1,153 @@
+<div class="min-h-screen flex items-center justify-center bg-gradient-to-br from-blue-600 via-blue-500 to-purple-600 p-4">
+  <!-- Animated Background Elements -->
+  <div class="absolute inset-0 overflow-hidden pointer-events-none">
+    <div class="absolute top-0 -left-40 w-80 h-80 bg-blue-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse"></div>
+    <div class="absolute bottom-0 -right-40 w-80 h-80 bg-purple-400 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-pulse" style="animation-delay: 2s"></div>
+  </div>
+
+  <!-- Main Card -->
+  <div class="relative bg-white/10 dark:bg-gray-800/30 backdrop-blur-xl p-8 rounded-3xl shadow-2xl w-full max-w-md border border-white/20">
+    <!-- Header -->
+    <div class="text-center mb-8">
+      <div class="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-green-400 to-blue-500 mb-4">
+        <svg class="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18 9v3m0 0v3m0-3h3m-3 0h-3m-2-5a4 4 0 11-8 0 4 4 0 018 0zM3 20a6 6 0 0112 0v1H3v-1z"></path>
+        </svg>
+      </div>
+      <h1 class="text-4xl font-bold text-white mb-2">Join HealthCare</h1>
+      <p class="text-blue-200">Create your patient account</p>
+    </div>
+
+    <!-- Error Message -->
+    <div *ngIf="errorMessage" class="mb-4 p-4 bg-red-500/20 border border-red-400/50 rounded-lg text-red-200 text-sm">
+      {{ errorMessage }}
+    </div>
+
+    <!-- Success Message -->
+    <div *ngIf="successMessage" class="mb-4 p-4 bg-green-500/20 border border-green-400/50 rounded-lg text-green-200 text-sm">
+      {{ successMessage }}
+    </div>
+
+    <!-- Form -->
+    <form (ngSubmit)="signup()" class="space-y-4">
+      <!-- Username Input -->
+      <div>
+        <label class="block text-sm font-medium text-gray-300 mb-2">Username</label>
+        <div class="relative">
+          <input
+            [(ngModel)]="form.username"
+            name="username"
+            type="text"
+            placeholder="Choose a username (5+ chars)"
+            class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+          <svg class="absolute right-3 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Email Input -->
+      <div>
+        <label class="block text-sm font-medium text-gray-300 mb-2">Email Address</label>
+        <div class="relative">
+          <input
+            [(ngModel)]="form.email"
+            name="email"
+            type="email"
+            placeholder="your@email.com"
+            class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+          <svg class="absolute right-3 top-3.5 w-5 h-5 text-gray-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Password Input -->
+      <div>
+        <label class="block text-sm font-medium text-gray-300 mb-2">Password</label>
+        <div class="relative">
+          <input
+            [(ngModel)]="form.password"
+            (input)="validatePassword()"
+            name="password"
+            [type]="showPassword ? 'text' : 'password'"
+            placeholder="Strong password (8+ chars)"
+            class="w-full px-4 py-3 rounded-lg bg-white/10 border border-white/20 text-white placeholder-white-400 focus:outline-none focus:ring-2 focus:ring-blue-400 transition"
+          />
+          <button
+            type="button"
+            (click)="togglePasswordVisibility()"
+            class="absolute right-3 top-3.5 text-gray-400 hover:text-gray-300"
+          >
+            <svg *ngIf="!showPassword" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z"></path>
+            </svg>
+            <svg *ngIf="showPassword" class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.875 18.825A10.05 10.05 0 0112 19c-4.478 0-8.268-2.943-9.543-7a9.97 9.97 0 011.563-4.803m5.596-3.856a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0z"></path>
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Password Strength Indicator -->
+        <div *ngIf="form.password" class="mt-2">
+          <div class="flex gap-1">
+            <div class="flex-1 h-1 rounded-full bg-gray-600" [ngClass]="passwordStrength >= 1 ? 'from-red-500 to-red-600 bg-gradient-to-r' : ''"></div>
+            <div class="flex-1 h-1 rounded-full bg-gray-600" [ngClass]="passwordStrength >= 2 ? 'from-yellow-500 to-yellow-600 bg-gradient-to-r' : ''"></div>
+            <div class="flex-1 h-1 rounded-full bg-gray-600" [ngClass]="passwordStrength >= 3 ? 'from-yellow-500 to-yellow-600 bg-gradient-to-r' : ''"></div>
+            <div class="flex-1 h-1 rounded-full bg-gray-600" [ngClass]="passwordStrength >= 4 ? 'from-green-500 to-green-600 bg-gradient-to-r' : ''"></div>
+            <div class="flex-1 h-1 rounded-full bg-gray-600" [ngClass]="passwordStrength >= 5 ? 'from-green-500 to-green-600 bg-gradient-to-r' : ''"></div>
+          </div>
+          <p class="text-xs text-gray-400 mt-1">
+            <span *ngIf="passwordStrength < 3" class="text-red-400">Weak password</span>
+            <span *ngIf="passwordStrength === 3" class="text-yellow-400">Fair password</span>
+            <span *ngIf="passwordStrength > 3" class="text-green-400">Strong password</span>
+          </p>
+        </div>
+      </div>
+
+      <!-- Sign Up Button -->
+      <button
+        type="submit"
+        [disabled]="loading"
+        class="w-full py-3 rounded-lg bg-gradient-to-r from-green-500 to-blue-600 text-white font-semibold hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed flex items-center justify-center gap-2 mt-6"
+      >
+        <span *ngIf="!loading">Create Account</span>
+        <span *ngIf="loading" class="flex items-center gap-2">
+          <svg class="animate-spin h-5 w-5" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+            <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+            <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+          </svg>
+          Creating account...
+        </span>
+      </button>
+    </form>
+
+    <!-- Divider -->
+    <div class="relative my-6">
+      <div class="absolute inset-0 flex items-center">
+        <div class="w-full border-t border-white/20"></div>
+      </div>
+      <div class="relative flex justify-center text-sm">
+        <span class="px-2 bg-white/10 text-gray-300">Already have an account?</span>
+      </div>
+    </div>
+
+    <!-- Log In Link -->
+    <div class="space-y-2">
+      <a
+        routerLink="/login"
+        class="block w-full py-3 rounded-lg border border-white/30 text-white font-semibold hover:bg-white/10 transition text-center"
+      >
+        Sign In
+      </a>
+      <p class="text-center text-sm text-gray-400">
+        Work with a center?
+        <a routerLink="/signup-admin" class="text-blue-300 hover:text-blue-200 font-semibold">Register center</a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,530 @@
+2026-04-07 21:51:21 INFO  c.h.HealthCareSystemApplication - Starting HealthCareSystemApplication using Java 22.0.2 with PID 21788 (C:\Users\Mayank.2.Bhardwaj\Downloads\HealthCareSystem\HealthCareSystem\target\classes started by Mayank.2.Bhardwaj in C:\Users\Mayank.2.Bhardwaj\Downloads\HealthCareSystem\HealthCareSystem)
+2026-04-07 21:51:21 INFO  c.h.HealthCareSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-07 21:51:21 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-07 21:51:21 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-07 21:51:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07 21:51:22 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 95 ms. Found 6 JPA repository interfaces.
+2026-04-07 21:51:23 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-07 21:51:23 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-07 21:51:23 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-07 21:51:23 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-07 21:51:23 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1888 ms
+2026-04-07 21:51:24 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07 21:51:24 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-04-07 21:51:24 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-07 21:51:24 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07 21:51:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-07 21:51:24 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@2fd723bc
+2026-04-07 21:51:24 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-07 21:51:24 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07 21:51:26 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07 21:51:26 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07 21:51:26 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-07 21:51:26 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 84ed3efa-ae50-42f8-949b-15aaec0d8973
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-07 21:51:26 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-07 21:51:27 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-07 21:51:27 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-07 21:51:27 INFO  c.h.HealthCareSystemApplication - Started HealthCareSystemApplication in 6.245 seconds (process running for 6.774)
+2026-04-07 21:53:35 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2026-04-07 21:53:35 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-07 21:53:36 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-07 21:53:36 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07 21:53:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-07 21:53:36 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2026-04-07 21:53:36 INFO  c.h.HealthCareSystemApplication - Starting HealthCareSystemApplication using Java 22.0.2 with PID 21788 (C:\Users\Mayank.2.Bhardwaj\Downloads\HealthCareSystem\HealthCareSystem\target\classes started by Mayank.2.Bhardwaj in C:\Users\Mayank.2.Bhardwaj\Downloads\HealthCareSystem\HealthCareSystem)
+2026-04-07 21:53:36 INFO  c.h.HealthCareSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-07 21:53:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07 21:53:36 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 52 ms. Found 6 JPA repository interfaces.
+2026-04-07 21:53:36 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-07 21:53:36 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-07 21:53:36 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-07 21:53:36 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-07 21:53:36 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 769 ms
+2026-04-07 21:53:37 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07 21:53:37 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-07 21:53:37 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07 21:53:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Starting...
+2026-04-07 21:53:37 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-2 - Added connection com.mysql.cj.jdbc.ConnectionImpl@74e9627b
+2026-04-07 21:53:37 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Start completed.
+2026-04-07 21:53:37 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-2)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07 21:53:37 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07 21:53:37 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07 21:53:37 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-07 21:53:37 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 83f96f03-7a69-49b5-87a5-01518ef03168
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-07 21:53:37 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-07 21:53:38 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-07 21:53:38 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-07 21:53:38 INFO  c.h.HealthCareSystemApplication - Started HealthCareSystemApplication in 1.931 seconds (process running for 137.359)
+2026-04-07 21:53:38 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-07 21:57:10 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener - Restarting due to 73 class path changes (0 additions, 73 deletions, 0 modifications)
+2026-04-07 21:57:10 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-07 21:57:10 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-07 21:57:10 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07 21:57:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown initiated...
+2026-04-07 21:57:10 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-2 - Shutdown completed.
+2026-04-07 21:57:14 INFO  c.h.HealthCareSystemApplication - Starting HealthCareSystemApplication using Java 22.0.2 with PID 21788 (C:\Users\Mayank.2.Bhardwaj\Downloads\HealthCareSystem\HealthCareSystem\target\classes started by Mayank.2.Bhardwaj in C:\Users\Mayank.2.Bhardwaj\Downloads\HealthCareSystem\HealthCareSystem)
+2026-04-07 21:57:14 INFO  c.h.HealthCareSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-07 21:57:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-07 21:57:15 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 69 ms. Found 6 JPA repository interfaces.
+2026-04-07 21:57:15 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-07 21:57:15 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-07 21:57:15 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-07 21:57:15 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-07 21:57:15 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 780 ms
+2026-04-07 21:57:15 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-07 21:57:15 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-07 21:57:15 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-07 21:57:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Starting...
+2026-04-07 21:57:15 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-3 - Added connection com.mysql.cj.jdbc.ConnectionImpl@5c17a160
+2026-04-07 21:57:15 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-3 - Start completed.
+2026-04-07 21:57:15 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-3)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-07 21:57:16 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-07 21:57:16 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-07 21:57:16 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-07 21:57:16 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: c6335d09-011b-460b-a1b8-76ad89a1e2d4
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-07 21:57:16 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-07 21:57:16 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-07 21:57:16 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-07 21:57:16 INFO  c.h.HealthCareSystemApplication - Started HealthCareSystemApplication in 2.092 seconds (process running for 356.257)
+2026-04-07 21:57:16 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+2026-04-07 23:24:29 INFO  o.a.c.c.C.[Tomcat-1].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-07 23:24:29 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-07 23:24:29 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 7 ms
+2026-04-07 23:24:29 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=cnash%40example.com ip=0:0:0:0:0:0:0:1
+2026-04-07 23:24:33 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=cnash%40example.com ip=0:0:0:0:0:0:0:1
+2026-04-07 23:24:34 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=cnash%40example.com status=200 timeTaken=5117ms
+2026-04-07 23:24:37 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=cnash%40example.com status=200 timeTaken=3928ms
+2026-04-07 23:25:28 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=mayankbhardwaj708%40gmail.com ip=0:0:0:0:0:0:0:1
+2026-04-07 23:25:33 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=mayankbhardwaj708%40gmail.com status=200 timeTaken=5021ms
+2026-04-07 23:28:06 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=mayankbhardwaj708%40gmail.com ip=0:0:0:0:0:0:0:1
+2026-04-07 23:28:09 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=mayankbhardwaj708%40gmail.com status=200 timeTaken=3776ms
+2026-04-11 12:23:52 INFO  c.h.HealthCareSystemApplication - Starting HealthCareSystemApplication using Java 21.0.10 with PID 10320 (C:\Users\Anmol.Pandey\OneDrive - Coforge Limited\Desktop\HealthAngular\Online-Health-Care-System-main\HealthCareSystem\target\classes started by Anmol.Pandey in C:\Users\Anmol.Pandey\OneDrive - Coforge Limited\Desktop\HealthAngular\Online-Health-Care-System-main\HealthCareSystem)
+2026-04-11 12:23:52 INFO  c.h.HealthCareSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-11 12:23:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-11 12:23:52 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-11 12:23:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-11 12:23:53 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 76 ms. Found 6 JPA repository interfaces.
+2026-04-11 12:23:54 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-11 12:23:54 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-11 12:23:54 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-11 12:23:54 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-11 12:23:54 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1679 ms
+2026-04-11 12:23:54 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-11 12:23:54 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-04-11 12:23:54 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-11 12:23:54 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-11 12:23:54 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-11 12:23:56 WARN  o.h.e.jdbc.spi.SqlExceptionHelper - SQL Error: 1045, SQLState: 28000
+2026-04-11 12:23:56 ERROR o.h.e.jdbc.spi.SqlExceptionHelper - Access denied for user 'root'@'localhost' (using password: YES)
+2026-04-11 12:23:56 WARN  o.h.e.j.e.i.JdbcEnvironmentInitiator - HHH000342: Could not obtain connection to query metadata
+org.hibernate.exception.GenericJDBCException: unable to obtain isolated JDBC connection [Access denied for user 'root'@'localhost' (using password: YES)] [n/a]
+	at org.hibernate.exception.internal.StandardSQLExceptionConverter.convert(StandardSQLExceptionConverter.java:63)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:108)
+	at org.hibernate.engine.jdbc.spi.SqlExceptionHelper.convert(SqlExceptionHelper.java:94)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:116)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:334)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.healthcare.HealthCareSystemApplication.main(HealthCareSystemApplication.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:121)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:114)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:840)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:416)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:237)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:180)
+	at com.zaxxer.hikari.util.DriverDataSource.getConnection(DriverDataSource.java:144)
+	at com.zaxxer.hikari.pool.PoolBase.newConnection(PoolBase.java:370)
+	at com.zaxxer.hikari.pool.PoolBase.newPoolEntry(PoolBase.java:207)
+	at com.zaxxer.hikari.pool.HikariPool.createPoolEntry(HikariPool.java:488)
+	at com.zaxxer.hikari.pool.HikariPool.checkFailFast(HikariPool.java:576)
+	at com.zaxxer.hikari.pool.HikariPool.<init>(HikariPool.java:97)
+	at com.zaxxer.hikari.HikariDataSource.getConnection(HikariDataSource.java:111)
+	at org.hibernate.engine.jdbc.connections.internal.DatasourceConnectionProviderImpl.getConnection(DatasourceConnectionProviderImpl.java:126)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess.obtainConnection(JdbcEnvironmentInitiator.java:485)
+	at org.hibernate.resource.transaction.backend.jdbc.internal.JdbcIsolationDelegate.delegateWork(JdbcIsolationDelegate.java:61)
+	... 38 common frames omitted
+2026-04-11 12:23:56 ERROR o.s.o.j.LocalContainerEntityManagerFactoryBean - Failed to initialize JPA EntityManagerFactory: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2026-04-11 12:23:56 WARN  o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+2026-04-11 12:23:56 INFO  o.a.catalina.core.StandardService - Stopping service [Tomcat]
+2026-04-11 12:23:56 INFO  o.s.b.a.l.ConditionEvaluationReportLogger - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+2026-04-11 12:23:56 ERROR o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'entityManagerFactory' defined in class path resource [org/springframework/boot/autoconfigure/orm/jpa/HibernateJpaConfiguration.class]: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1826)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:607)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:974)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:628)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:752)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1361)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1350)
+	at com.healthcare.HealthCareSystemApplication.main(HealthCareSystemApplication.java:11)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:50)
+Caused by: org.hibernate.service.spi.ServiceException: Unable to create requested service [org.hibernate.engine.jdbc.env.spi.JdbcEnvironment] due to: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:276)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.initializeService(AbstractServiceRegistryImpl.java:238)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.getService(AbstractServiceRegistryImpl.java:215)
+	at org.hibernate.boot.model.relational.Database.<init>(Database.java:45)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.getDatabase(InFlightMetadataCollectorImpl.java:226)
+	at org.hibernate.boot.internal.InFlightMetadataCollectorImpl.<init>(InFlightMetadataCollectorImpl.java:194)
+	at org.hibernate.boot.model.process.spi.MetadataBuildingProcess.complete(MetadataBuildingProcess.java:171)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.metadata(EntityManagerFactoryBuilderImpl.java:1442)
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1513)
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:66)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:388)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:419)
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:400)
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:364)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1873)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1822)
+	... 18 common frames omitted
+Caused by: org.hibernate.HibernateException: Unable to determine Dialect without JDBC metadata (please set 'jakarta.persistence.jdbc.url' for common cases or 'hibernate.dialect' when a custom Dialect implementation must be provided)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.determineDialect(DialectFactoryImpl.java:191)
+	at org.hibernate.engine.jdbc.dialect.internal.DialectFactoryImpl.buildDialect(DialectFactoryImpl.java:87)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentWithDefaults(JdbcEnvironmentInitiator.java:186)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.getJdbcEnvironmentUsingJdbcMetadata(JdbcEnvironmentInitiator.java:410)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:129)
+	at org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator.initiateService(JdbcEnvironmentInitiator.java:81)
+	at org.hibernate.boot.registry.internal.StandardServiceRegistryImpl.initiateService(StandardServiceRegistryImpl.java:130)
+	at org.hibernate.service.internal.AbstractServiceRegistryImpl.createService(AbstractServiceRegistryImpl.java:263)
+	... 33 common frames omitted
+2026-04-11 12:26:03 INFO  c.h.HealthCareSystemApplication - Starting HealthCareSystemApplication using Java 21.0.10 with PID 4440 (C:\Users\Anmol.Pandey\OneDrive - Coforge Limited\Desktop\HealthAngular\Online-Health-Care-System-main\HealthCareSystem\target\classes started by Anmol.Pandey in C:\Users\Anmol.Pandey\OneDrive - Coforge Limited\Desktop\HealthAngular\Online-Health-Care-System-main\HealthCareSystem)
+2026-04-11 12:26:03 INFO  c.h.HealthCareSystemApplication - No active profile set, falling back to 1 default profile: "default"
+2026-04-11 12:26:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2026-04-11 12:26:03 INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2026-04-11 12:26:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2026-04-11 12:26:04 INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 73 ms. Found 6 JPA repository interfaces.
+2026-04-11 12:26:05 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2026-04-11 12:26:05 INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2026-04-11 12:26:05 INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.52]
+2026-04-11 12:26:05 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2026-04-11 12:26:05 INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1530 ms
+2026-04-11 12:26:05 INFO  o.h.jpa.internal.util.LogHelper - HHH000204: Processing PersistenceUnitInfo [name: default]
+2026-04-11 12:26:05 INFO  org.hibernate.Version - HHH000412: Hibernate ORM core version 6.6.44.Final
+2026-04-11 12:26:05 INFO  o.h.c.i.RegionFactoryInitiator - HHH000026: Second-level cache disabled
+2026-04-11 12:26:05 INFO  o.s.o.j.p.SpringPersistenceUnitInfo - No LoadTimeWeaver setup: ignoring JPA class transformer
+2026-04-11 12:26:05 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2026-04-11 12:26:06 INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@76a5caf1
+2026-04-11 12:26:06 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2026-04-11 12:26:06 INFO  o.hibernate.orm.connections.pooling - HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.45
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2026-04-11 12:26:07 INFO  o.h.e.t.j.p.i.JtaPlatformInitiator - HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2026-04-11 12:26:09 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2026-04-11 12:26:09 WARN  o.s.b.a.o.j.JpaBaseConfiguration$JpaWebConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2026-04-11 12:26:09 WARN  o.s.b.a.s.s.UserDetailsServiceAutoConfiguration - 
+
+Using generated security password: 0ecc6641-1536-4c1e-98bf-e81eb413d2e1
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2026-04-11 12:26:09 INFO  o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer - Global AuthenticationManager configured with UserDetailsService bean with name inMemoryUserDetailsManager
+2026-04-11 12:26:10 INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2026-04-11 12:26:10 INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2026-04-11 12:26:10 INFO  c.h.HealthCareSystemApplication - Started HealthCareSystemApplication in 6.642 seconds (process running for 7.427)
+2026-04-11 12:29:19 INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2026-04-11 12:29:19 INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2026-04-11 12:29:19 INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2026-04-11 12:29:19 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/register-user ip=0:0:0:0:0:0:0:1
+2026-04-11 12:29:21 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/register-user status=200 timeTaken=1897ms
+2026-04-11 12:29:23 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=anmolpandey771%40gmail.com ip=0:0:0:0:0:0:0:1
+2026-04-11 12:29:28 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=anmolpandey771%40gmail.com status=200 timeTaken=5349ms
+2026-04-11 12:29:28 ERROR o.a.c.c.C.[.[.[.[dispatcherServlet] - Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed: org.springframework.mail.MailSendException: Mail server connection failed. Failed messages: jakarta.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out; message exceptions (1) are:
+Failed message 1: jakarta.mail.MessagingException: Exception reading response;
+  nested exception is:
+	java.net.SocketTimeoutException: Read timed out] with root cause
+java.net.SocketTimeoutException: Read timed out
+	at java.base/sun.nio.ch.NioSocketImpl.timedRead(NioSocketImpl.java:278)
+	at java.base/sun.nio.ch.NioSocketImpl.implRead(NioSocketImpl.java:304)
+	at java.base/sun.nio.ch.NioSocketImpl.read(NioSocketImpl.java:346)
+	at java.base/sun.nio.ch.NioSocketImpl$1.read(NioSocketImpl.java:796)
+	at java.base/java.net.Socket$SocketInputStream.read(Socket.java:1099)
+	at org.eclipse.angus.mail.util.TraceInputStream.read(TraceInputStream.java:107)
+	at java.base/java.io.BufferedInputStream.fill(BufferedInputStream.java:291)
+	at java.base/java.io.BufferedInputStream.implRead(BufferedInputStream.java:325)
+	at java.base/java.io.BufferedInputStream.read(BufferedInputStream.java:312)
+	at org.eclipse.angus.mail.util.LineInputStream.readLine(LineInputStream.java:104)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.readServerResponse(SMTPTransport.java:2500)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.openServer(SMTPTransport.java:2205)
+	at org.eclipse.angus.mail.smtp.SMTPTransport.protocolConnect(SMTPTransport.java:729)
+	at jakarta.mail.Service.connect(Service.java:345)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.connectTransport(JavaMailSenderImpl.java:480)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.doSend(JavaMailSenderImpl.java:399)
+	at org.springframework.mail.javamail.JavaMailSenderImpl.send(JavaMailSenderImpl.java:317)
+	at org.springframework.mail.MailSender.send(MailSender.java:42)
+	at com.healthcare.services.EmailService.sendOtp(EmailService.java:31)
+	at com.healthcare.controller.OtpController.sendOtp(OtpController.java:28)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:258)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:191)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:118)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:991)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:896)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1089)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:979)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1014)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:914)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:590)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:885)
+	at jakarta.servlet.http.HttpServlet.service(HttpServlet.java:658)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:51)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:110)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at com.healthcare.config.RequestResponseLoggingFilter.doFilterInternal(RequestResponseLoggingFilter.java:31)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:108)
+	at org.springframework.security.web.FilterChainProxy.lambda$doFilterInternal$3(FilterChainProxy.java:231)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:365)
+	at org.springframework.security.web.access.intercept.AuthorizationFilter.doFilter(AuthorizationFilter.java:101)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:125)
+	at org.springframework.security.web.access.ExceptionTranslationFilter.doFilter(ExceptionTranslationFilter.java:119)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:131)
+	at org.springframework.security.web.session.SessionManagementFilter.doFilter(SessionManagementFilter.java:85)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.AnonymousAuthenticationFilter.doFilter(AnonymousAuthenticationFilter.java:100)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter.doFilter(SecurityContextHolderAwareRequestFilter.java:179)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.savedrequest.RequestCacheAwareFilter.doFilter(RequestCacheAwareFilter.java:63)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at com.healthcare.config.JwtFilter.doFilterInternal(JwtFilter.java:35)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107)
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.web.filter.CorsFilter.doFilterInternal(CorsFilter.java:91)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90)
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82)
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374)
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233)
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.ServletRequestPathFilter.doFilter(ServletRequestPathFilter.java:52)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebSecurityConfiguration.java:319)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.servlet.handler.HandlerMappingIntrospector.lambda$createCacheFilter$4(HandlerMappingIntrospector.java:267)
+	at org.springframework.web.filter.CompositeFilter$VirtualFilterChain.doFilter(CompositeFilter.java:113)
+	at org.springframework.web.filter.CompositeFilter.doFilter(CompositeFilter.java:74)
+	at org.springframework.security.config.annotation.web.configuration.WebMvcSecurityConfiguration$CompositeFilterChainProxy.doFilter(WebMvcSecurityConfiguration.java:240)
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:362)
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:278)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:162)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:138)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:165)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:88)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:492)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:113)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:83)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:72)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:342)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:399)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:903)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1775)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:973)
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:491)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:63)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2026-04-11 12:29:57 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=anmolpandey771%40gmail.com ip=0:0:0:0:0:0:0:1
+2026-04-11 12:30:06 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=anmolpandey771%40gmail.com status=200 timeTaken=9118ms
+2026-04-11 12:30:26 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/verify?email=anmolpandey771%40gmail.com&otp=691050 ip=0:0:0:0:0:0:0:1
+2026-04-11 12:30:26 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/verify?email=anmolpandey771%40gmail.com&otp=691050 status=200 timeTaken=8ms
+2026-04-11 12:30:43 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:30:43 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=200 timeTaken=386ms
+2026-04-11 12:30:45 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/appointments/my ip=0:0:0:0:0:0:0:1
+2026-04-11 12:30:45 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/centers/approved ip=0:0:0:0:0:0:0:1
+2026-04-11 12:30:45 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/reports?patientName=Anmol23 ip=0:0:0:0:0:0:0:1
+2026-04-11 12:30:45 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/reports?patientName=Anmol23 status=200 timeTaken=23ms
+2026-04-11 12:30:45 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/centers/approved status=200 timeTaken=24ms
+2026-04-11 12:30:45 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/appointments/my status=200 timeTaken=44ms
+2026-04-11 12:32:05 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/otp/send?email=anmolpandey771%40gmail.com ip=0:0:0:0:0:0:0:1
+2026-04-11 12:32:11 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/otp/send?email=anmolpandey771%40gmail.com status=200 timeTaken=6318ms
+2026-04-11 12:32:40 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:32:40 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.healthcare.exceptions.BadRequestException: Invalid username or password]
+2026-04-11 12:32:40 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=400 timeTaken=20ms
+2026-04-11 12:32:50 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:32:50 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.healthcare.exceptions.BadRequestException: Invalid username or password]
+2026-04-11 12:32:50 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=400 timeTaken=17ms
+2026-04-11 12:32:57 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:32:57 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.healthcare.exceptions.BadRequestException: Invalid username or password]
+2026-04-11 12:32:57 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=400 timeTaken=14ms
+2026-04-11 12:33:13 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:33:13 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.healthcare.exceptions.BadRequestException: Invalid username or password]
+2026-04-11 12:33:13 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=400 timeTaken=11ms
+2026-04-11 12:33:46 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:33:47 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=200 timeTaken=217ms
+2026-04-11 12:33:48 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/appointments/my ip=0:0:0:0:0:0:0:1
+2026-04-11 12:33:48 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/reports?patientName=Anmol23 ip=0:0:0:0:0:0:0:1
+2026-04-11 12:33:48 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/centers/approved ip=0:0:0:0:0:0:0:1
+2026-04-11 12:33:48 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/appointments/my status=200 timeTaken=28ms
+2026-04-11 12:33:48 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/reports?patientName=Anmol23 status=200 timeTaken=19ms
+2026-04-11 12:33:48 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/centers/approved status=200 timeTaken=34ms
+2026-04-11 12:38:52 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:38:52 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=200 timeTaken=150ms
+2026-04-11 12:38:54 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/appointments/my ip=0:0:0:0:0:0:0:1
+2026-04-11 12:38:54 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/centers/approved ip=0:0:0:0:0:0:0:1
+2026-04-11 12:38:54 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/reports?patientName=Anmol23 ip=0:0:0:0:0:0:0:1
+2026-04-11 12:38:54 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/reports?patientName=Anmol23 status=200 timeTaken=6ms
+2026-04-11 12:38:54 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/appointments/my status=200 timeTaken=7ms
+2026-04-11 12:38:54 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/centers/approved status=200 timeTaken=14ms
+2026-04-11 12:39:24 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/change-password ip=0:0:0:0:0:0:0:1
+2026-04-11 12:39:24 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.healthcare.dto.ApiResponse<?> com.healthcare.controller.AuthController.changePassword(com.healthcare.dto.ChangePasswordRequest): [Field error in object 'changePasswordRequest' on field 'newPassword': rejected value [anmol@24]; codes [Pattern.changePasswordRequest.newPassword,Pattern.newPassword,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [changePasswordRequest.newPassword,newPassword]; arguments []; default message [newPassword],[Ljakarta.validation.constraints.Pattern$Flag;@6ba24cd7,^(?=.*[A-Z])(?=.*[0-9]).*$]; default message [Password must contain at least 1 uppercase letter and 1 number]] ]
+2026-04-11 12:39:24 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/change-password status=400 timeTaken=18ms
+2026-04-11 12:40:33 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/change-password ip=0:0:0:0:0:0:0:1
+2026-04-11 12:40:33 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.healthcare.dto.ApiResponse<?> com.healthcare.controller.AuthController.changePassword(com.healthcare.dto.ChangePasswordRequest): [Field error in object 'changePasswordRequest' on field 'newPassword': rejected value [anmol@24]; codes [Pattern.changePasswordRequest.newPassword,Pattern.newPassword,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [changePasswordRequest.newPassword,newPassword]; arguments []; default message [newPassword],[Ljakarta.validation.constraints.Pattern$Flag;@6ba24cd7,^(?=.*[A-Z])(?=.*[0-9]).*$]; default message [Password must contain at least 1 uppercase letter and 1 number]] ]
+2026-04-11 12:40:33 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/change-password status=400 timeTaken=3ms
+2026-04-11 12:41:06 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/change-password ip=0:0:0:0:0:0:0:1
+2026-04-11 12:41:06 WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MethodArgumentNotValidException: Validation failed for argument [0] in public com.healthcare.dto.ApiResponse<?> com.healthcare.controller.AuthController.changePassword(com.healthcare.dto.ChangePasswordRequest): [Field error in object 'changePasswordRequest' on field 'newPassword': rejected value [anmol@24]; codes [Pattern.changePasswordRequest.newPassword,Pattern.newPassword,Pattern.java.lang.String,Pattern]; arguments [org.springframework.context.support.DefaultMessageSourceResolvable: codes [changePasswordRequest.newPassword,newPassword]; arguments []; default message [newPassword],[Ljakarta.validation.constraints.Pattern$Flag;@6ba24cd7,^(?=.*[A-Z])(?=.*[0-9]).*$]; default message [Password must contain at least 1 uppercase letter and 1 number]] ]
+2026-04-11 12:41:06 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/change-password status=400 timeTaken=3ms
+2026-04-11 12:41:51 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:41:52 WARN  o.s.w.s.m.m.a.ExceptionHandlerExceptionResolver - Resolved [com.healthcare.exceptions.BadRequestException: Invalid username or password]
+2026-04-11 12:41:52 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=400 timeTaken=216ms
+2026-04-11 12:42:01 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=POST uri=/api/auth/login ip=0:0:0:0:0:0:0:1
+2026-04-11 12:42:01 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/auth/login status=200 timeTaken=242ms
+2026-04-11 12:42:03 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/appointments/my ip=0:0:0:0:0:0:0:1
+2026-04-11 12:42:03 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/reports?patientName=Anmol23 ip=0:0:0:0:0:0:0:1
+2026-04-11 12:42:03 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/reports?patientName=Anmol23 status=200 timeTaken=10ms
+2026-04-11 12:42:03 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/appointments/my status=200 timeTaken=15ms
+2026-04-11 12:42:03 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/centers/approved ip=0:0:0:0:0:0:0:1
+2026-04-11 12:42:03 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/centers/approved status=200 timeTaken=7ms
+2026-04-11 14:09:23 WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h7m56s794ms98µs300ns).
+2026-04-11 14:15:05 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/appointments/my ip=0:0:0:0:0:0:0:1
+2026-04-11 14:15:05 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/centers/approved ip=0:0:0:0:0:0:0:1
+2026-04-11 14:15:05 INFO  c.h.c.RequestResponseLoggingFilter - Incoming request: method=GET uri=/api/reports?patientName=Anmol23 ip=0:0:0:0:0:0:0:1
+2026-04-11 14:15:05 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/appointments/my status=200 timeTaken=33ms
+2026-04-11 14:15:05 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/centers/approved status=200 timeTaken=33ms
+2026-04-11 14:15:05 INFO  c.h.c.RequestResponseLoggingFilter - Response sent: uri=/api/reports?patientName=Anmol23 status=200 timeTaken=40ms
+2026-04-11 15:53:30 INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2026-04-11 15:53:30 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2026-04-11 15:53:30 INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2026-04-11 15:53:30 INFO  o.s.o.j.LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+2026-04-11 15:53:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2026-04-11 15:53:30 INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

@@ -1,0 +1,96 @@
+<nav class="sticky top-0 z-50 backdrop-blur-xl bg-white/10 border-b border-white/20 shadow-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+    <div class="flex justify-between items-center">
+      <!-- Logo -->
+      <div class="flex items-center gap-3 cursor-pointer group" routerLink="/home">
+        <div class="bg-gradient-to-r from-blue-500 to-purple-600 text-white p-2 rounded-lg shadow-md group-hover:scale-110 transition">
+          <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"></path>
+          </svg>
+        </div>
+        <h1 class="text-xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent hidden sm:block">HealthCare System</h1>
+      </div>
+
+      <!-- Desktop Navigation -->
+      <div class="hidden md:flex items-center gap-6">
+        <ng-container *ngIf="!isAuthenticated()">
+          <a routerLink="/login" class="text-gray-700 dark:text-gray-300 hover:text-blue-600 transition font-medium">Login</a>
+          <a routerLink="/signup-user" class="px-4 py-2 rounded-lg bg-gradient-to-r from-blue-500 to-purple-600 text-white font-semibold shadow-md hover:scale-105 hover:shadow-lg transition">Get Started</a>
+        </ng-container>
+
+        <ng-container *ngIf="isAuthenticated()">
+          <div class="flex items-center gap-4">
+            <div class="text-right">
+              <p class="text-gray-900 dark:text-white font-semibold text-sm">{{ getCurrentUser()?.username }}</p>
+              <p class="text-gray-600 dark:text-gray-400 text-xs">{{ getRole() }}</p>
+            </div>
+            <button
+              (click)="logout()"
+              class="px-4 py-2 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-medium transition"
+            >
+              Logout
+            </button>
+          </div>
+        </ng-container>
+
+        <!-- Theme Toggle -->
+        <button
+          (click)="toggleTheme()"
+          class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 transition"
+        >
+          <svg *ngIf="!theme.isDarkMode()" class="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg *ngIf="theme.isDarkMode()" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.828-2.828a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm4.243-5.657a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM5.464 5.464a1 1 0 001.414-1.414L4.171 2.757a1 1 0 00-1.414 1.414l1.707 1.707z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <div class="md:hidden flex items-center gap-3">
+        <button
+          (click)="toggleTheme()"
+          class="p-2 rounded-full bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 transition"
+        >
+          <svg *ngIf="!theme.isDarkMode()" class="w-5 h-5 text-gray-800" fill="currentColor" viewBox="0 0 20 20">
+            <path d="M17.293 13.293A8 8 0 016.707 2.707a8.001 8.001 0 1010.586 10.586z"></path>
+          </svg>
+          <svg *ngIf="theme.isDarkMode()" class="w-5 h-5 text-yellow-400" fill="currentColor" viewBox="0 0 20 20">
+            <path fill-rule="evenodd" d="M10 2a1 1 0 011 1v1a1 1 0 11-2 0V3a1 1 0 011-1zm4 8a4 4 0 11-8 0 4 4 0 018 0zm-.464 4.536l.707.707a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414zm2.828-2.828a1 1 0 001.414-1.414l-.707-.707a1 1 0 00-1.414 1.414l.707.707zm4.243-5.657a1 1 0 00-1.414 1.414l.707.707a1 1 0 001.414-1.414l-.707-.707zM5.464 5.464a1 1 0 001.414-1.414L4.171 2.757a1 1 0 00-1.414 1.414l1.707 1.707z" clip-rule="evenodd"></path>
+          </svg>
+        </button>
+        <button
+          (click)="toggleMenu()"
+          class="p-2 rounded-lg bg-gray-200 hover:bg-gray-300 dark:bg-gray-700 dark:hover:bg-gray-600 transition"
+        >
+          <svg *ngIf="!isMenuOpen" class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+          </svg>
+          <svg *ngIf="isMenuOpen" class="w-6 h-6 text-gray-800 dark:text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div *ngIf="isMenuOpen" class="md:hidden mt-4 pb-4 border-t border-gray-200 dark:border-gray-700 pt-4">
+      <ng-container *ngIf="!isAuthenticated()">
+        <a routerLink="/login" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition" (click)="toggleMenu()">Login</a>
+        <a routerLink="/signup-user" class="block py-2 text-gray-700 dark:text-gray-300 hover:text-blue-600 transition" (click)="toggleMenu()">Get Started</a>
+      </ng-container>
+
+      <ng-container *ngIf="isAuthenticated()">
+        <p class="py-2 text-gray-900 dark:text-white font-semibold">{{ getCurrentUser()?.username }}</p>
+        <p class="py-2 text-gray-600 dark:text-gray-400 text-sm">{{ getRole() }}</p>
+        <button
+          (click)="logout()"
+          class="w-full mt-4 px-4 py-2 rounded-lg bg-red-50 hover:bg-red-100 text-red-600 font-medium transition"
+        >
+          Logout
+        </button>
+      </ng-container>
+    </div>
+  </div>
+</nav>
